@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Log</title>
+    <link rel="stylesheet" href="./css/log.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div style="position: absolute; top: 10px; right: 20px; font-size: 14px;">
+        <label for="ipInput">IP Server:</label>
+        <input type="text" id="ipInput" placeholder="192.168.x.x:8080" style="width: 140px;">
+        <button id="setIpBtn">✔</button>
+    </div>
+
+    <div class="container">
+        <h2>📋 Attendance Log</h2>
+        <div class="controls">
+            <input type="date" id="datePicker">
+            <button class="getlog">🔍 View</button>
+            <button class="add-user">➕ Add Face</button>
+            <button class="manage-users">⚙️ Manage</button>
+        </div>
+
+        <table id="logTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="./js/log.js"></script>
+</body>
+
+</html>

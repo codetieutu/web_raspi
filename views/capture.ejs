@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Camera Stream + Capture</title>
+    <link rel="stylesheet" href="./css/capture.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>📷 Raspberry Pi Camera Control</h1>
+    <button id="backBtn">⬅ Quay lại</button>
+    <div class="container">
+        <img id="camera" src="http://192.168.1.223:8080/video" width="640" height="480" alt="Camera Stream">
+        <div class="capture-container">
+            <input type="text" id="nameInput" placeholder="Nhập tên người cần chụp">
+            <div class="btn-container">
+                <button id="captureBtn">Chụp ảnh</button>
+                <button id="stopCaptureBtn">Dừng chụp</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/capture.js" defer></script>
+</body>
+
+</html>

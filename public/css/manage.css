@@ -1,0 +1,66 @@
+/* Toàn bộ nền và font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Tiêu đề */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Danh sách người dùng */
+ul#personList {
+    list-style-type: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Mỗi dòng người dùng */
+ul#personList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Nút xoá */
+button.delete-person {
+    background-color: #e60000;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 70px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover cho nút xoá */
+button.delete-person:hover {
+    background-color: #cc0000;
+}
+
+#backBtn {
+    background-color: #888;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#backBtn:hover {
+    background-color: #666;
+}

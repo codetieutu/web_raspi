@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý khuôn mặt</title>
+    <link rel="stylesheet" href="/css/manage.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <button id="backBtn">⬅ Quay lại</button>
+    <h2>📋 Danh sách người đã đăng ký</h2>
+    <ul id="personList">
+        <% if (persons.length===0) { %>
+            <li>Không có người nào.</li>
+            <% } else { %>
+                <% persons.forEach(function(name) { %>
+                    <li>
+                        <%= name %>
+                            <button class="delete-person" data-name="<%= name %>">❌ Xoá</button>
+                    </li>
+                    <% }) %>
+                        <% } %>
+    </ul>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="/js/manage.js"></script>
+</body>
+
+</html>
